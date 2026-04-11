@@ -43,7 +43,7 @@ export default function OneDevLanding() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(900px 600px at 15% 28%, rgba(255,255,255,0.12), transparent 55%), radial-gradient(800px 500px at 82% 32%, rgba(255,255,255,0.08), transparent 58%), radial-gradient(900px 700px at 50% 100%, rgba(255,179,71,0.09), transparent 60%)",
+              "radial-gradient(900px 600px at 15% 30%, rgba(255,255,255,0.12), transparent 55%), radial-gradient(800px 500px at 82% 32%, rgba(255,255,255,0.08), transparent 58%), radial-gradient(900px 700px at 50% 100%, rgba(255,179,71,0.09), transparent 60%)",
           }}
         />
       </div>
@@ -420,7 +420,7 @@ export default function OneDevLanding() {
                       href={item.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="block rounded-[28px] border border-white/10 bg-white/4 p-6 shadow-[0_18px_55px_rgba(0,0,0,0.45)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20"
+                      className="flex h-full flex-col rounded-[28px] border border-white/10 bg-white/4 p-6 shadow-[0_18px_55px_rgba(0,0,0,0.45)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20"
                     >
                       <div className="relative mb-5 overflow-hidden rounded-2xl border border-white/10">
                         <img
@@ -434,20 +434,22 @@ export default function OneDevLanding() {
                         </div>
                       </div>
 
-                      <div className="text-lg font-semibold tracking-tight">
-                        {item.title}
-                      </div>
+                      <div className="flex flex-1 flex-col">
+                        <div className="text-lg font-semibold tracking-tight">
+                          {item.title}
+                        </div>
 
-                      <div className="mt-5 text-2xl font-semibold tracking-tight text-[#ffb347]">
-                        {item.result}
-                      </div>
+                        <div className="mt-5 text-2xl font-semibold tracking-tight text-[#ffb347]">
+                          {item.result}
+                        </div>
 
-                      <div className="mt-3 text-base leading-6 text-white/65">
-                        {item.desc}
-                      </div>
+                        <div className="mt-3 text-base leading-6 text-white/65">
+                          {item.desc}
+                        </div>
 
-                      <div className="mt-4 text-xs uppercase tracking-[0.18em] text-white/40">
-                        {t("cases.openProject")}
+                        <div className="mt-auto pt-4 text-xs uppercase tracking-[0.18em] text-white/40">
+                          {t("cases.openProject")}
+                        </div>
                       </div>
                     </a>
                   </StaggerItem>
@@ -891,7 +893,7 @@ function Reveal({
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.05, margin: "0px 0px -120px 0px" }}
       transition={{ duration: 0.55, delay, ease: "easeOut" }}
       className={className}
     >
@@ -911,7 +913,7 @@ function Stagger({
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.05, margin: "0px 0px -120px 0px" }}
       variants={{
         hidden: {},
         show: {
