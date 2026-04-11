@@ -889,10 +889,10 @@ function Reveal({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.05, margin: "0px 0px -120px 0px" }}
-      transition={{ duration: 0.55, delay, ease: "easeOut" }}
+      transition={{ duration: 0.45, delay, ease: "easeOut" }}
       className={className}
     >
       {children}
@@ -937,11 +937,10 @@ function StaggerItem({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 18 },
+        hidden: { opacity: 0 },
         show: {
           opacity: 1,
-          y: 0,
-          transition: { duration: 0.45, ease: "easeOut" },
+          transition: { duration: 0.4, ease: "easeOut" },
         },
       }}
       className={className}
