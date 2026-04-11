@@ -702,14 +702,12 @@ export default function OneDevLanding() {
 
       <footer className="border-t border-white/10 py-8">
         <Container>
-          <Reveal>
-            <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-              <div className="text-sm text-white/45">{t("footer.copy")}</div>
-              <div className="flex items-center gap-3">
-                <LanguagePicker />
-              </div>
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="text-sm text-white/45">{t("footer.copy")}</div>
+            <div className="flex items-center gap-3">
+              <LanguagePicker />
             </div>
-          </Reveal>
+          </div>
         </Container>
       </footer>
     </div>
