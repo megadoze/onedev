@@ -119,21 +119,21 @@ export default function OneDevLanding() {
                 </div>
 
                 <Stagger className="mt-8 grid gap-3 sm:grid-cols-3">
-                  <StaggerItem>
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.format.k")}
                       v={t("hero.stats.format.v")}
                       d={t("hero.stats.format.d")}
                     />
                   </StaggerItem>
-                  <StaggerItem>
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.focus.k")}
                       v={t("hero.stats.focus.v")}
                       d={t("hero.stats.focus.d")}
                     />
                   </StaggerItem>
-                  <StaggerItem>
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.approach.k")}
                       v={t("hero.stats.approach.v")}
@@ -324,8 +324,8 @@ export default function OneDevLanding() {
 
                 <Stagger className="grid gap-4 sm:grid-cols-2">
                   {services.map((item) => (
-                    <StaggerItem key={item.title}>
-                      <Card className="p-6 hover:-translate-y-1">
+                    <StaggerItem key={item.title} className="h-full">
+                      <Card className="flex h-full flex-col p-6 hover:-translate-y-1">
                         <div className="text-base font-semibold tracking-tight">
                           {item.title}
                         </div>
@@ -368,25 +368,25 @@ export default function OneDevLanding() {
                     {t("benefits.eyebrow")}
                   </div>
                   <Stagger className="mt-5 grid gap-3 sm:grid-cols-2">
-                    <StaggerItem>
+                    <StaggerItem className="h-full">
                       <Mini
                         title={t("benefits.items.direct.title")}
                         desc={t("benefits.items.direct.desc")}
                       />
                     </StaggerItem>
-                    <StaggerItem>
+                    <StaggerItem className="h-full">
                       <Mini
                         title={t("benefits.items.whole.title")}
                         desc={t("benefits.items.whole.desc")}
                       />
                     </StaggerItem>
-                    <StaggerItem>
+                    <StaggerItem className="h-full">
                       <Mini
                         title={t("benefits.items.flex.title")}
                         desc={t("benefits.items.flex.desc")}
                       />
                     </StaggerItem>
-                    <StaggerItem>
+                    <StaggerItem className="h-full">
                       <Mini
                         title={t("benefits.items.business.title")}
                         desc={t("benefits.items.business.desc")}
@@ -413,9 +413,9 @@ export default function OneDevLanding() {
                 </div>
               </div>
 
-              <Stagger className="mt-8 grid gap-4 lg:grid-cols-2 auto-rows-fr">
+              <Stagger className="mt-8 grid auto-rows-fr gap-4 lg:grid-cols-2">
                 {cases.map((item) => (
-                  <StaggerItem key={item.title}>
+                  <StaggerItem key={item.title} className="h-full">
                     <a
                       href={item.url}
                       target="_blank"
@@ -509,8 +509,8 @@ export default function OneDevLanding() {
                 </div>
 
                 <Stagger className="grid gap-4 md:grid-cols-2">
-                  <StaggerItem>
-                    <Card className="p-7 hover:-translate-y-1">
+                  <StaggerItem className="h-full">
+                    <Card className="flex h-full flex-col p-7 hover:-translate-y-1">
                       <div className="text-[12px] uppercase tracking-[0.18em] text-white/55">
                         {t("format.forWhom.title")}
                       </div>
@@ -524,8 +524,8 @@ export default function OneDevLanding() {
                     </Card>
                   </StaggerItem>
 
-                  <StaggerItem>
-                    <Card className="p-7 hover:-translate-y-1">
+                  <StaggerItem className="h-full">
+                    <Card className="flex h-full flex-col p-7 hover:-translate-y-1">
                       <div className="text-[12px] uppercase tracking-[0.18em] text-white/55">
                         {t("format.output.title")}
                       </div>
@@ -561,8 +561,8 @@ export default function OneDevLanding() {
                 </div>
 
                 <Stagger className="grid gap-4 md:grid-cols-2">
-                  <StaggerItem>
-                    <Card className="p-7 hover:-translate-y-1">
+                  <StaggerItem className="h-full">
+                    <Card className="flex h-full flex-col p-7 hover:-translate-y-1">
                       <div className="text-[12px] uppercase tracking-[0.18em] text-white/55">
                         {t("pricing.landing.title")}
                       </div>
@@ -577,8 +577,8 @@ export default function OneDevLanding() {
                     </Card>
                   </StaggerItem>
 
-                  <StaggerItem>
-                    <Card className="p-7 hover:-translate-y-1">
+                  <StaggerItem className="h-full">
+                    <Card className="flex h-full flex-col p-7 hover:-translate-y-1">
                       <div className="text-[12px] uppercase tracking-[0.18em] text-white/55">
                         {t("pricing.system.title")}
                       </div>
@@ -702,7 +702,7 @@ export default function OneDevLanding() {
 
       <footer className="border-t border-white/10 py-8">
         <Container>
-          <div className="flex gap-3 items-center justify-between">
+          <div className="flex items-center justify-between gap-3">
             <div className="text-sm text-white/45">{t("footer.copy")}</div>
             <div className="flex items-center gap-3">
               <LanguagePicker />
@@ -731,7 +731,7 @@ function Card({
   return (
     <div
       className={[
-        "rounded-[28px] border border-white/10 bg-white/4 shadow-[0_18px_55px_rgba(0,0,0,0.45)] backdrop-blur-xl transition duration-300",
+        "h-full rounded-[28px] border border-white/10 bg-white/4 shadow-[0_18px_55px_rgba(0,0,0,0.45)] backdrop-blur-xl transition duration-300",
         className,
       ].join(" ")}
       {...props}
@@ -743,7 +743,7 @@ function Card({
 
 function Stat({ k, v, d }: { k: string; v: string; d: string }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/4 p-5 shadow-[0_18px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl transition duration-300 hover:-translate-y-1">
+    <div className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/4 p-5 shadow-[0_18px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl transition duration-300 hover:-translate-y-1">
       <div className="text-[11px] uppercase tracking-[0.18em] text-white/50">
         {k}
       </div>
@@ -763,7 +763,7 @@ function OverlayMetric({
   note: string;
 }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-black/28 p-4 backdrop-blur-md transition duration-300 hover:-translate-y-1">
+    <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-black/28 p-4 backdrop-blur-md transition duration-300 hover:-translate-y-1">
       <div className="text-[10px] uppercase tracking-[0.18em] text-white/60">
         {title}
       </div>
@@ -785,7 +785,7 @@ function Tag({ children }: { children: React.ReactNode }) {
 
 function Mini({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/4 p-4 transition duration-300 hover:-translate-y-1">
+    <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/4 p-4 transition duration-300 hover:-translate-y-1">
       <div className="text-base font-semibold">{title}</div>
       <div className="mt-2 text-sm leading-6 text-white/64">{desc}</div>
     </div>
@@ -822,7 +822,7 @@ function MotionKpi({
       initial={{ opacity: 0, scale: 0.96 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, delay, ease: "easeOut" }}
-      className="rounded-2xl border border-white/10 bg-white/5 p-3 sm:min-w-0"
+      className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-3 sm:min-w-0"
     >
       <div className="text-xl font-semibold tracking-tight text-white">
         {value}
