@@ -83,8 +83,8 @@ export default function OneDevLanding() {
         </Container>
       </header>
 
-      <main id="top" className="relative z-10">
-        <section className="pt-14 md:pt-20">
+      <main id="top" className="relative z-10 scroll-mt-20">
+        <section className="pt-14 md:pt-20 ">
           <Container>
             <div className="grid gap-8 md:grid-cols-[1.05fr_0.95fr] md:items-stretch">
               <Reveal className="flex flex-col" delay={0.05}>
