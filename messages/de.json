@@ -1,0 +1,302 @@
+{
+  "OneDev": {
+    "nav": {
+      "services": "Leistungen",
+      "approach": "Vorgehen",
+      "cases": "Projekte",
+      "cta": "Projekt besprechen"
+    },
+    "hero": {
+      "badge": "one-person studio • design + code + systems",
+      "title": "Websites, CRM und Websysteme für Geschäftsanforderungen.",
+      "subtitle": "Landingpages, Buchungssysteme und interne Tools — von der Idee bis zum Launch.",
+      "ctaPrimary": "In Telegram schreiben",
+      "ctaSecondary": "Leistungen ansehen",
+      "stats": {
+        "format": {
+          "k": "Format",
+          "v": "Direkt & persönlich",
+          "d": "Ohne Zwischenstufen"
+        },
+        "focus": {
+          "k": "Fokus",
+          "v": "Von Landing bis CRM",
+          "d": "Für Business-Ziele"
+        },
+        "approach": {
+          "k": "Ansatz",
+          "v": "End-to-End",
+          "d": "Von Idee bis Launch"
+        }
+      }
+    },
+    "preview": {
+      "title": "Was Sie erhalten",
+      "items": {
+        "landing": {
+          "title": "Landingpage",
+          "value": "klare Botschaft"
+        },
+        "crm": {
+          "title": "CRM / Dashboard",
+          "value": "an Prozesse angepasst"
+        },
+        "booking": {
+          "title": "Buchungssystem",
+          "value": "Slots & Planung"
+        },
+        "integrations": {
+          "title": "Integrationen",
+          "value": "telegram, email, payments"
+        }
+      }
+    },
+    "metrics": {
+      "onePerson": {
+        "title": "One person",
+        "value": "Eine Person",
+        "note": "Klare Kommunikation"
+      },
+      "noFluff": {
+        "title": "No fluff",
+        "value": "Ohne Umwege",
+        "note": "Fokus auf das Wesentliche"
+      },
+      "logic": {
+        "title": "Logic",
+        "value": "Mehr als UI",
+        "note": "Prozesse & Logik"
+      },
+      "growth": {
+        "title": "Growth",
+        "value": "Skalierbar",
+        "note": "Für Wachstum ausgelegt"
+      }
+    },
+    "services": {
+      "eyebrow": "Leistungen",
+      "title": "Was ich umsetze",
+      "desc": "Von einfachen Landingpages bis zu komplexen Systemen mit Logik, Dashboards und Integrationen.",
+      "items": [
+        {
+          "title": "Websites",
+          "desc": "Schnelle und klare Websites mit Fokus auf Geschäftsziele."
+        },
+        {
+          "title": "Landingpages",
+          "desc": "Für Kampagnen, Produkte oder Services."
+        },
+        {
+          "title": "CRM-Systeme",
+          "desc": "Interne Tools und Lead-Management."
+        },
+        {
+          "title": "Buchungssysteme",
+          "desc": "Planung, Slots und Kalender."
+        },
+        {
+          "title": "Integrationen",
+          "desc": "Telegram, Email, Payments, Analytics."
+        },
+        {
+          "title": "Weiterentwicklung",
+          "desc": "Optimierung und Ausbau."
+        }
+      ]
+    },
+    "stack": {
+      "items": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Node.js",
+        "PostgreSQL",
+        "Supabase",
+        "Stripe",
+        "Telegram",
+        "REST API"
+      ]
+    },
+    "problems": {
+      "eyebrow": "Probleme",
+      "items": [
+        "Website vermittelt keinen klaren Mehrwert",
+        "Leads gehen verloren",
+        "Schwaches UX",
+        "Keine Struktur, nur Seiten"
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Warum es funktioniert",
+      "items": {
+        "direct": {
+          "title": "Direkter Kontakt",
+          "desc": "Ohne unnötige Ebenen"
+        },
+        "whole": {
+          "title": "Ganzheitlich",
+          "desc": "Design + Entwicklung"
+        },
+        "flex": {
+          "title": "Flexibel",
+          "desc": "Einfach anpassbar"
+        },
+        "business": {
+          "title": "Business-Fokus",
+          "desc": "Nicht nur Design"
+        }
+      }
+    },
+    "cases": {
+      "eyebrow": "Projekte",
+      "title": "Ausgewählte Arbeiten",
+      "openProject": "Projekt ansehen",
+      "items": [
+        {
+          "title": "CAR2DRIVE",
+          "result": "Website für Autovermietung",
+          "desc": "Strukturierte Website mit schneller Fahrzeugauswahl und klarem Conversion-Fokus.",
+          "image": "/cases/c2d.avif",
+          "url": "https://car2drive.ua",
+          "badge": "website"
+        },
+        {
+          "title": "CAR2DRIVE CRM",
+          "result": "CRM-System für Vermietung",
+          "desc": "Internes System für Leads, Status, Kunden und Prozesssteuerung.",
+          "image": "/cases/crm.avif",
+          "url": "https://admin.car2drive.ua",
+          "badge": "system"
+        },
+        {
+          "title": "Aera Capsule",
+          "result": "Produkt-Website",
+          "desc": "Moderne Website mit klarer visueller Struktur und Markenfokus.",
+          "image": "/cases/aera.avif",
+          "url": "https://aeracapsule.com",
+          "badge": "brand"
+        },
+        {
+          "title": "Fleet Wise",
+          "result": "Plattform für Autovermietung",
+          "desc": "Strukturierte Plattform mit Fokus auf Service und Geschäftsprozesse.",
+          "image": "/cases/fleetwise.avif",
+          "url": "https://fleetwise.rent",
+          "badge": "platform"
+        },
+        {
+          "title": "MINI2GO",
+          "result": "Website + CRM",
+          "desc": "Service mit klarer Nutzerführung und interner Verwaltung.",
+          "image": "/cases/mini2.avif",
+          "url": "https://mini2go.rent",
+          "badge": "landing"
+        },
+        {
+          "title": "Domus Studio",
+          "result": "Landingpage Bauunternehmen",
+          "desc": "Landingpage mit Fokus auf Vertrauen, Klarheit und Conversion.",
+          "image": "/cases/domus.avif",
+          "url": "https://domusstudio.pro",
+          "badge": "construction"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Prozess",
+      "title": "Ablauf",
+      "items": [
+        "Analyse",
+        "Struktur & Logik",
+        "Design + Entwicklung",
+        "Integrationen",
+        "Launch & Weiterentwicklung"
+      ]
+    },
+    "format": {
+      "eyebrow": "Format",
+      "title": "Für Projekte mit Fokus auf Ergebnis",
+      "desc": "Start möglich mit Idee oder bestehendem Produkt.",
+      "forWhom": {
+        "title": "Geeignet für",
+        "items": [
+          "— Unternehmen",
+          "— Services",
+          "— Startups",
+          "— lokale Projekte",
+          "— interne Systeme"
+        ]
+      },
+      "output": {
+        "title": "Ergebnis",
+        "items": [
+          "— Struktur",
+          "— Logik",
+          "— Interface",
+          "— Code",
+          "— skalierbare Basis"
+        ]
+      }
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "Ungefähre Projektkosten",
+      "desc": "Endpreis hängt vom Umfang ab.",
+      "landing": {
+        "title": "Landingpage",
+        "price": "ab 500€",
+        "items": [
+          "— Struktur & Konzept",
+          "— Design + Entwicklung",
+          "— Formulare & Integrationen"
+        ]
+      },
+      "system": {
+        "title": "System / CRM",
+        "price": "ab 3000€",
+        "items": [
+          "— Logik & Prozesse",
+          "— Dashboards & Admin",
+          "— Integrationen & Automatisierung"
+        ]
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "desc": "Kurz erklärt.",
+      "items": [
+        {
+          "q": "Arbeiten Sie allein?",
+          "a": "Ja, ohne Team oder Zwischenebenen."
+        },
+        {
+          "q": "Was entwickeln Sie?",
+          "a": "Websites, Landingpages, CRM-Systeme und Buchungslösungen."
+        },
+        {
+          "q": "Wie lange dauert es?",
+          "a": "Je nach Umfang. Landingpage — 2–3 Tage."
+        },
+        {
+          "q": "Was kostet es?",
+          "a": "Landingpage ab 500€, CRM-Systeme ab 3000€."
+        },
+        {
+          "q": "Ohne Spezifikation möglich?",
+          "a": "Ja, wir definieren alles gemeinsam."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Projekt besprechen.",
+      "desc": "Start mit Idee oder bestehendem Projekt möglich.",
+      "telegram": "In Telegram schreiben",
+      "email": "megadoze33@gmail.com"
+    },
+    "footer": {
+      "copy": "© 2026 OneDev.Work"
+    }
+  }
+}

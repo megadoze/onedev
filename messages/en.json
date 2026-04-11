@@ -1,0 +1,302 @@
+{
+  "OneDev": {
+    "nav": {
+      "services": "Services",
+      "approach": "Approach",
+      "cases": "Cases",
+      "cta": "Discuss project"
+    },
+    "hero": {
+      "badge": "one-person studio • design + code + systems",
+      "title": "Websites, CRM and web systems for business needs.",
+      "subtitle": "Landing pages, booking systems and internal tools — from idea to launch.",
+      "ctaPrimary": "Message on Telegram",
+      "ctaSecondary": "View services",
+      "stats": {
+        "format": {
+          "k": "Format",
+          "v": "Direct collaboration",
+          "d": "No middlemen"
+        },
+        "focus": {
+          "k": "Focus",
+          "v": "From landing to CRM",
+          "d": "Built for business needs"
+        },
+        "approach": {
+          "k": "Approach",
+          "v": "End-to-end",
+          "d": "From idea to launch"
+        }
+      }
+    },
+    "preview": {
+      "title": "What you get",
+      "items": {
+        "landing": {
+          "title": "Landing page",
+          "value": "clear offer"
+        },
+        "crm": {
+          "title": "CRM / dashboard",
+          "value": "tailored to workflow"
+        },
+        "booking": {
+          "title": "Booking system",
+          "value": "slots & scheduling"
+        },
+        "integrations": {
+          "title": "Integrations",
+          "value": "telegram, email, payments"
+        }
+      }
+    },
+    "metrics": {
+      "onePerson": {
+        "title": "One person",
+        "value": "Single point",
+        "note": "No communication loss"
+      },
+      "noFluff": {
+        "title": "No fluff",
+        "value": "No bullshit",
+        "note": "Only what matters"
+      },
+      "logic": {
+        "title": "Logic",
+        "value": "Beyond UI",
+        "note": "Flows & systems"
+      },
+      "growth": {
+        "title": "Growth",
+        "value": "Scalable",
+        "note": "Built to evolve"
+      }
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "What I can build",
+      "desc": "From simple landing pages to complex systems with business logic, dashboards and integrations.",
+      "items": [
+        {
+          "title": "Websites",
+          "desc": "Fast and clear websites focused on business goals."
+        },
+        {
+          "title": "Landing pages",
+          "desc": "Built for ads, products or services."
+        },
+        {
+          "title": "CRM systems",
+          "desc": "Internal tools and lead management."
+        },
+        {
+          "title": "Booking systems",
+          "desc": "Scheduling, slots and calendars."
+        },
+        {
+          "title": "Integrations",
+          "desc": "Telegram, email, payments, analytics."
+        },
+        {
+          "title": "Growth & support",
+          "desc": "Iterations and product evolution."
+        }
+      ]
+    },
+    "stack": {
+      "items": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Node.js",
+        "PostgreSQL",
+        "Supabase",
+        "Stripe",
+        "Telegram",
+        "REST API"
+      ]
+    },
+    "problems": {
+      "eyebrow": "Problems",
+      "items": [
+        "Website doesn’t communicate value",
+        "Leads are lost",
+        "Poor UX",
+        "No system — just pages"
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Why it works",
+      "items": {
+        "direct": {
+          "title": "Direct communication",
+          "desc": "No unnecessary layers"
+        },
+        "whole": {
+          "title": "Full ownership",
+          "desc": "Design + development"
+        },
+        "flex": {
+          "title": "Flexible",
+          "desc": "Easy to adapt"
+        },
+        "business": {
+          "title": "Business-driven",
+          "desc": "Not just design"
+        }
+      }
+    },
+    "cases": {
+      "eyebrow": "Cases",
+      "title": "Selected projects",
+      "openProject": "Open project",
+      "items": [
+        {
+          "title": "CAR2DRIVE",
+          "result": "Car rental website",
+          "desc": "Rental website with clear structure, fast vehicle selection and conversion-focused flow.",
+          "image": "/cases/c2d.avif",
+          "url": "https://car2drive.ua",
+          "badge": "website"
+        },
+        {
+          "title": "CAR2DRIVE CRM",
+          "result": "Rental CRM system",
+          "desc": "Internal CRM system: leads, statuses, clients, process control and team workflow in one interface.",
+          "image": "/cases/crm.avif",
+          "url": "https://admin.car2drive.ua",
+          "badge": "system"
+        },
+        {
+          "title": "Aera Capsule",
+          "result": "Product website",
+          "desc": "Modern product website with strong visual identity and brand-focused presentation.",
+          "image": "/cases/aera.avif",
+          "url": "https://aeracapsule.com",
+          "badge": "brand"
+        },
+        {
+          "title": "Fleet Wise",
+          "result": "Rental platform",
+          "desc": "Platform for rental business with structured logic and service-driven UX.",
+          "image": "/cases/fleetwise.avif",
+          "url": "https://fleetwise.rent",
+          "badge": "platform"
+        },
+        {
+          "title": "MINI2GO",
+          "result": "Website + CRM system",
+          "desc": "Rental service with strong visual style and internal management system for leads and statuses.",
+          "image": "/cases/mini2.avif",
+          "url": "https://mini2go.rent",
+          "badge": "landing"
+        },
+        {
+          "title": "Domus Studio",
+          "result": "Construction landing page",
+          "desc": "Landing page focused on trust, clarity and conversion-driven structure.",
+          "image": "/cases/domus.avif",
+          "url": "https://domusstudio.pro",
+          "badge": "construction"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "How it works",
+      "items": [
+        "Discovery",
+        "Structure & logic",
+        "Design + development",
+        "Integrations",
+        "Launch & growth"
+      ]
+    },
+    "format": {
+      "eyebrow": "Format",
+      "title": "For those who need results, not just execution",
+      "desc": "You can come with an idea or an existing product.",
+      "forWhom": {
+        "title": "Best fit",
+        "items": [
+          "— businesses",
+          "— services",
+          "— startups",
+          "— local projects",
+          "— internal tools"
+        ]
+      },
+      "output": {
+        "title": "Outcome",
+        "items": [
+          "— structure",
+          "— logic",
+          "— interface",
+          "— code",
+          "— scalable base"
+        ]
+      }
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Estimated project ranges",
+      "desc": "Final cost depends on scope and complexity. Below are rough ranges.",
+      "landing": {
+        "title": "Landing page",
+        "price": "from €500",
+        "items": [
+          "— structure & wireframe",
+          "— design + development",
+          "— forms & basic integrations"
+        ]
+      },
+      "system": {
+        "title": "System / CRM",
+        "price": "from €3000",
+        "items": [
+          "— logic & flow design",
+          "— dashboards & admin panels",
+          "— integrations & automation"
+        ]
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "desc": "Short answers.",
+      "items": [
+        {
+          "q": "Do you work alone?",
+          "a": "Yes, no team or extra layers."
+        },
+        {
+          "q": "What can you build?",
+          "a": "Websites, landing pages, CRM systems, booking flows."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "Depends on scope. Simple landing page — 2–3 days. More complex systems take longer."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "Depends on scope. Landing page — from €500. CRM systems — from €3000."
+        },
+        {
+          "q": "Can we start without a spec?",
+          "a": "Yes, we can define everything together."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Let’s discuss your project.",
+      "desc": "You can come with an idea or an existing product.",
+      "telegram": "Message on Telegram",
+      "email": "megadoze33@gmail.com"
+    },
+    "footer": {
+      "copy": "© 2026 OneDev.Work"
+    }
+  }
+}
