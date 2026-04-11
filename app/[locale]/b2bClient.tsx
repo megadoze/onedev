@@ -43,7 +43,7 @@ export default function OneDevLanding() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(900px 600px at 15% 20%, rgba(255,255,255,0.12), transparent 55%), radial-gradient(800px 500px at 82% 32%, rgba(255,255,255,0.08), transparent 58%), radial-gradient(900px 700px at 50% 100%, rgba(255,179,71,0.09), transparent 60%)",
+              "radial-gradient(900px 600px at 15% 28%, rgba(255,255,255,0.12), transparent 55%), radial-gradient(800px 500px at 82% 32%, rgba(255,255,255,0.08), transparent 58%), radial-gradient(900px 700px at 50% 100%, rgba(255,179,71,0.09), transparent 60%)",
           }}
         />
       </div>
