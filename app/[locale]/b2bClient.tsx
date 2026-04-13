@@ -3,7 +3,7 @@
 
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { LanguagePicker } from "@/app/utils/languagePicker";
 
 type ServiceItem = {
@@ -25,7 +25,28 @@ type FaqItem = {
   a: string;
 };
 
+function withLocale(url: string, locale: string) {
+  if (!url) return url;
+
+  const defaultLocale = "ru";
+
+  try {
+    const parsed = new URL(url);
+
+    if (locale === defaultLocale) {
+      return parsed.toString().replace(/\/$/, "");
+    }
+
+    parsed.pathname = `/${locale}${parsed.pathname === "/" ? "" : parsed.pathname}`;
+    return parsed.toString().replace(/\/$/, "");
+  } catch {
+    return url;
+  }
+}
+
 export default function OneDevLanding() {
+  const locale = useLocale();
+
   const t = useTranslations("OneDev");
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
 
@@ -417,7 +438,7 @@ export default function OneDevLanding() {
                 {cases.map((item) => (
                   <StaggerItem key={item.title} className="h-full">
                     <a
-                      href={item.url}
+                      href={withLocale(item.url, locale)}
                       target="_blank"
                       rel="noreferrer"
                       className="flex h-full flex-col rounded-[28px] border border-white/10 bg-white/4 p-6 shadow-[0_18px_55px_rgba(0,0,0,0.45)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20"
