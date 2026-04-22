@@ -6,7 +6,7 @@ const LOCALES = ["en", "es", "de", "uk", "ru"] as const;
 const DEFAULT_LOCALE = "ru";
 
 const SITE_NAME = "ONEDEV";
-const CANONICAL = "/";
+const CANONICAL = "";
 const siteUrl = "https://onedev.work";
 
 const META_BY_LOCALE: Record<
@@ -45,7 +45,11 @@ function normalizeBaseUrl(url: string) {
 }
 
 function localePath(locale: string, path: string) {
-  return locale === DEFAULT_LOCALE ? path : `/${locale}${path}`;
+  if (locale === DEFAULT_LOCALE) {
+    return path || "/";
+  }
+
+  return path ? `/${locale}${path}` : `/${locale}`;
 }
 
 function getOgLocale(locale: (typeof LOCALES)[number]) {

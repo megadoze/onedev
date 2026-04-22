@@ -67,23 +67,10 @@ export default function proxy(req: NextRequest) {
   const url = req.nextUrl.clone();
   url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
 
-  const res = NextResponse.rewrite(url);
+  const res = NextResponse.redirect(url);
   return withLocaleCookie(res, locale);
 }
 
 export const config = {
   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
-
-// import createMiddleware from "next-intl/middleware";
-
-// export default createMiddleware({
-//   locales: ["ru", "en", "de", "es", "uk"],
-//   defaultLocale: "ru",
-//   localePrefix: "as-needed",
-//   localeDetection: false,
-// });
-
-// export const config = {
-//   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
-// };
