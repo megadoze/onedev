@@ -108,7 +108,7 @@ export default function OneDevLanding() {
         <section className="pt-14 md:pt-20 ">
           <Container>
             <div className="grid gap-8 md:grid-cols-[1.05fr_0.95fr] md:items-stretch">
-              <div className="flex flex-col">
+              <Reveal className="flex flex-col" delay={0.05}>
                 <div>
                   <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/12 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-white/72">
                     <span className="h-2 w-2 rounded-full bg-[#ffb347]" />
@@ -139,30 +139,30 @@ export default function OneDevLanding() {
                   </div>
                 </div>
 
-                <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                  <div className="h-full">
+                <Stagger className="mt-8 grid gap-3 sm:grid-cols-3">
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.format.k")}
                       v={t("hero.stats.format.v")}
                       d={t("hero.stats.format.d")}
                     />
-                  </div>
-                  <div className="h-full">
+                  </StaggerItem>
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.focus.k")}
                       v={t("hero.stats.focus.v")}
                       d={t("hero.stats.focus.d")}
                     />
-                  </div>
-                  <div className="h-full">
+                  </StaggerItem>
+                  <StaggerItem className="h-full">
                     <Stat
                       k={t("hero.stats.approach.k")}
                       v={t("hero.stats.approach.v")}
                       d={t("hero.stats.approach.d")}
                     />
-                  </div>
-                </div>
-              </div>
+                  </StaggerItem>
+                </Stagger>
+              </Reveal>
 
               <Card className="overflow-hidden p-0">
                 <div className="relative h-full min-h-[520px] overflow-hidden bg-black/30">
@@ -171,7 +171,12 @@ export default function OneDevLanding() {
                   <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-white/6 blur-3xl" />
 
                   <div className="relative flex h-full flex-col justify-between p-5 md:p-6">
-                    <div className="rounded-[24px] border border-white/10 bg-white/5 p-4 backdrop-blur-md">
+                    <motion.div
+                      initial={{ opacity: 0, y: 18 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.55, ease: "easeOut" }}
+                      className="rounded-[24px] border border-white/10 bg-white/5 p-4 backdrop-blur-md"
+                    >
                       <div className="flex items-center justify-between gap-3">
                         <div className="text-[11px] uppercase tracking-[0.18em] text-white/50">
                           {t("preview.title")}
@@ -200,10 +205,19 @@ export default function OneDevLanding() {
                           value={t("preview.items.integrations.value")}
                         />
                       </div>
-                    </div>
+                    </motion.div>
 
                     <div className="mt-4 grid gap-3 md:grid-cols-12">
-                      <div className="md:col-span-7 rounded-[24px] border border-white/10 bg-black/25 p-4 backdrop-blur-md">
+                      <motion.div
+                        initial={{ opacity: 0, y: 24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.55,
+                          delay: 0.08,
+                          ease: "easeOut",
+                        }}
+                        className="md:col-span-7 rounded-[24px] border border-white/10 bg-black/25 p-4 backdrop-blur-md"
+                      >
                         <div className="flex items-center justify-between gap-3">
                           <div>
                             <div className="text-[10px] uppercase tracking-[0.18em] text-white/45">
@@ -244,24 +258,49 @@ export default function OneDevLanding() {
                             status="done"
                           />
                         </div>
-                      </div>
+                      </motion.div>
 
                       <div className="md:col-span-5 grid gap-3">
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, x: 18 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{
+                            duration: 0.5,
+                            delay: 0.14,
+                            ease: "easeOut",
+                          }}
+                        >
                           <OverlayMetric
                             title={t("metrics.onePerson.title")}
                             value={t("metrics.onePerson.value")}
                             note={t("metrics.onePerson.note")}
                           />
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                          initial={{ opacity: 0, x: 18 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{
+                            duration: 0.5,
+                            delay: 0.22,
+                            ease: "easeOut",
+                          }}
+                        >
                           <OverlayMetric
                             title={t("metrics.noFluff.title")}
                             value={t("metrics.noFluff.value")}
                             note={t("metrics.noFluff.note")}
                           />
-                        </div>
-                        <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-1">
+                        </motion.div>
+                        <motion.div
+                          initial={{ opacity: 0, x: 18 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{
+                            duration: 0.5,
+                            delay: 0.3,
+                            ease: "easeOut",
+                          }}
+                          className="grid gap-3 sm:grid-cols-2 md:grid-cols-1"
+                        >
                           <OverlayMetric
                             title={t("metrics.logic.title")}
                             value={t("metrics.logic.value")}
@@ -272,7 +311,7 @@ export default function OneDevLanding() {
                             value={t("metrics.growth.value")}
                             note={t("metrics.growth.note")}
                           />
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -776,12 +815,17 @@ function Mini({ title, desc }: { title: string; desc: string }) {
 
 function PreviewRow({ title, value }: { title: string; value: string }) {
   return (
-    <div className="flex items-center justify-between gap-4 rounded-2xl border border-white/8 bg-black/20 px-4 py-3">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className="flex items-center justify-between gap-4 rounded-2xl border border-white/8 bg-black/20 px-4 py-3"
+    >
       <div className="text-sm text-white/82">{title}</div>
       <div className="text-right text-xs uppercase tracking-[0.16em] text-white/48">
         {value}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -795,14 +839,19 @@ function MotionKpi({
   delay: number;
 }) {
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-3 sm:min-w-0">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
+      className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-3 sm:min-w-0"
+    >
       <div className="text-xl font-semibold tracking-tight text-white">
         {value}
       </div>
       <div className="mt-1 break-words text-[10px] uppercase tracking-[0.12em] text-white/45">
         {label}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -828,7 +877,12 @@ function LiveEvent({
   }, [status]);
 
   return (
-    <div className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/4 px-3 py-3">
+    <motion.div
+      initial={{ opacity: 0, x: -14 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
+      className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/4 px-3 py-3"
+    >
       <div>
         <div className="text-sm font-medium text-white/88">{title}</div>
         <div className="mt-1 text-xs text-white/48">{meta}</div>
@@ -841,7 +895,7 @@ function LiveEvent({
       >
         {status}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
