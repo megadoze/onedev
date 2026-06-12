@@ -12,21 +12,6 @@ function isLocale(value: string | null | undefined): value is Locale {
   return !!value && LOCALE_SET.has(value);
 }
 
-function detectLocale(req: NextRequest): Locale {
-  const cookieLocale = req.cookies.get("locale")?.value;
-  if (isLocale(cookieLocale)) return cookieLocale;
-
-  const header = req.headers.get("accept-language")?.toLowerCase() || "";
-
-  if (header.includes("uk")) return "uk";
-  if (header.includes("ru")) return "ru";
-  if (header.includes("de")) return "de";
-  if (header.includes("es")) return "es";
-  if (header.includes("en")) return "en";
-
-  return DEFAULT_LOCALE;
-}
-
 const handleI18nRouting = createMiddleware({
   locales: [...LOCALES],
   defaultLocale: DEFAULT_LOCALE,
@@ -46,29 +31,15 @@ function withLocaleCookie(res: NextResponse, locale: Locale) {
 
 export default function proxy(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
-  const segments = pathname.split("/").filter(Boolean);
-  const first = segments[0];
+  const first = pathname.split("/").filter(Boolean)[0];
 
-  // Если локаль уже явно есть в URL — просто отдаём в next-intl
+  const res = handleI18nRouting(req);
+
   if (isLocale(first)) {
-    const res = handleI18nRouting(req);
     return withLocaleCookie(res, first);
   }
 
-  const locale = detectLocale(req);
-
-  // Для ru оставляем URL как есть и даём next-intl обработать as-needed
-  if (locale === DEFAULT_LOCALE) {
-    const res = handleI18nRouting(req);
-    return withLocaleCookie(res, locale);
-  }
-
-  // Для не-default локали делаем rewrite на внутренний /{locale}/...
-  const url = req.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
-
-  const res = NextResponse.redirect(url);
-  return withLocaleCookie(res, locale);
+  return res;
 }
 
 export const config = {

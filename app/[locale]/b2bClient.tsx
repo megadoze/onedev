@@ -108,7 +108,7 @@ export default function OneDevLanding() {
         <section className="pt-14 md:pt-20 ">
           <Container>
             <div className="grid gap-8 md:grid-cols-[1.05fr_0.95fr] md:items-stretch">
-              <Reveal className="flex flex-col" delay={0.05}>
+              <div className="flex flex-col">
                 <div>
                   <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/12 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-white/72">
                     <span className="h-2 w-2 rounded-full bg-[#ffb347]" />
@@ -162,7 +162,7 @@ export default function OneDevLanding() {
                     />
                   </StaggerItem>
                 </Stagger>
-              </Reveal>
+              </div>
 
               <Card className="overflow-hidden p-0">
                 <div className="relative h-full min-h-[520px] overflow-hidden bg-black/30">
