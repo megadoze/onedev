@@ -200,7 +200,24 @@
           "image": "/cases/domus.avif",
           "url": "https://domusstudio.pro",
           "badge": "construction"
-        }
+        },
+        {
+          "title": "Human +",
+          "result": "Landing page for an exoskeleton rental service",
+          "desc": "A landing page for a company that rents out exoskeletons, highlighting the technology’s benefits, use cases, and a simple inquiry process.",
+          "image": "/cases/humanplus.avif",
+          "url": "https://humanplus.work",
+          "badge": "landing"
+        },
+        {
+          "title": "DAZE",
+          "result": "Landing page design for a luxury car rental service",
+          "desc": "A landing page design concept for a luxury car rental service, focused on premium visuals, convenient vehicle selection, and an exclusive atmosphere.",
+          "image": "/cases/daze.avif",
+          "url": "#",
+          "badge": "design"
+        },
+        { "title": "HORIZON", "result": "Landing page design for a real estate agency", "desc": "A landing page design concept for a real estate agency, focused on modern property presentation, convenient listing search, and building trust in the company.", "image": "/cases/horizon.avif", "url": "#", "badge": "design" }
       ]
     },
     "process": {

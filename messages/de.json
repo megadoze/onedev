@@ -200,7 +200,24 @@
           "image": "/cases/domus.avif",
           "url": "https://domusstudio.pro",
           "badge": "construction"
-        }
+        },
+        {
+          "title": "Human +",
+          "result": "Landingpage für einen Exoskelett-Verleih",
+          "desc": "Eine Landingpage für ein Unternehmen, das Exoskelette vermietet, mit Fokus auf die Vorteile der Technologie, verschiedene Einsatzmöglichkeiten und eine einfache Anfrage.",
+          "image": "/cases/humanplus.avif",
+          "url": "https://humanplus.work",
+          "badge": "landing"
+        },
+        {
+          "title": "DAZE",
+          "result": "Landingpage-Design für einen Luxusautoverleih",
+          "desc": "Ein Designkonzept für die Landingpage eines Luxusautoverleihs mit Fokus auf eine hochwertige visuelle Präsentation, eine komfortable Fahrzeugauswahl und eine exklusive Atmosphäre.",
+          "image": "/cases/daze.avif",
+          "url": "#",
+          "badge": "design"
+        },
+        { "title": "HORIZON", "result": "Landingpage-Design für eine Immobilienagentur", "desc": "Ein Designkonzept für die Landingpage einer Immobilienagentur mit Fokus auf eine moderne Präsentation der Objekte, eine komfortable Immobiliensuche und den Aufbau von Vertrauen in das Unternehmen.", "image": "/cases/horizon.avif", "url": "#", "badge": "design" }
       ]
     },
     "process": {
