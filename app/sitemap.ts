@@ -7,33 +7,28 @@ const SITE_URL = "https://onedev.work";
 const ROUTES = ["/"] as const;
 
 function localePath(locale: string, path: string) {
-  if (path === "/") {
-    return locale === DEFAULT_LOCALE ? "/" : `/${locale}`;
+  if (locale === DEFAULT_LOCALE) {
+    return path;
   }
 
-  return locale === DEFAULT_LOCALE ? path : `/${locale}${path}`;
+  return path === "/" ? `/${locale}` : `/${locale}${path}`;
 }
 
 function absoluteUrl(path: string) {
-  return `${SITE_URL}${path}`;
+  return new URL(path, SITE_URL).toString();
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (!SITE_URL) return [];
-
-  const lastModified = new Date();
-
   return ROUTES.flatMap((route) => {
-    const languages = Object.fromEntries(
+    const languages: Record<string, string> = Object.fromEntries(
       LOCALES.map((locale) => [locale, absoluteUrl(localePath(locale, route))]),
-    ) as Record<string, string>;
+    );
 
     languages["x-default"] = absoluteUrl(localePath(DEFAULT_LOCALE, route));
 
     return LOCALES.map((locale) => ({
       url: absoluteUrl(localePath(locale, route)),
-      lastModified,
-      changeFrequency: route === "/" ? "weekly" : "monthly",
+      changeFrequency: "weekly" as const,
       priority: route === "/" ? 1 : 0.8,
       alternates: {
         languages,
