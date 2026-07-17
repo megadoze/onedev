@@ -214,10 +214,16 @@
           "result": "Landingpage-Design für einen Luxusautoverleih",
           "desc": "Ein Designkonzept für die Landingpage eines Luxusautoverleihs mit Fokus auf eine hochwertige visuelle Präsentation, eine komfortable Fahrzeugauswahl und eine exklusive Atmosphäre.",
           "image": "/cases/daze.avif",
-          "url": "#",
+          "url": "",
           "badge": "design"
         },
-        { "title": "HORIZON", "result": "Landingpage-Design für eine Immobilienagentur", "desc": "Ein Designkonzept für die Landingpage einer Immobilienagentur mit Fokus auf eine moderne Präsentation der Objekte, eine komfortable Immobiliensuche und den Aufbau von Vertrauen in das Unternehmen.", "image": "/cases/horizon.avif", "url": "#", "badge": "design" }
+        { "title": "HORIZON", 
+          "result": "Landingpage-Design für eine Immobilienagentur", 
+          "desc": "Ein Designkonzept für die Landingpage einer Immobilienagentur mit Fokus auf eine moderne Präsentation der Objekte, eine komfortable Immobiliensuche und den Aufbau von Vertrauen in das Unternehmen.", 
+          "image": "/cases/horizon.avif", 
+          "url": "", 
+          "badge": "design" 
+        }
       ]
     },
     "process": {

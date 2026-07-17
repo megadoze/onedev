@@ -214,10 +214,16 @@
           "result": "Diseño de una landing page para un servicio de alquiler de coches de lujo",
           "desc": "Concepto de diseño para la landing page de un servicio de alquiler de coches de lujo, centrado en una presentación visual prémium, una selección cómoda de vehículos y una atmósfera exclusiva.",
           "image": "/cases/daze.avif",
-          "url": "#",
+          "url": "",
           "badge": "design"
         },
-        { "title": "HORIZON", "result": "Diseño de una landing page para una agencia inmobiliaria", "desc": "Concepto de diseño para la landing page de una agencia inmobiliaria, centrado en una presentación moderna de las propiedades, una búsqueda cómoda de ofertas y la generación de confianza en la empresa.", "image": "/cases/horizon.avif", "url": "#", "badge": "design" }
+        { "title": "HORIZON", 
+          "result": "Diseño de una landing page para una agencia inmobiliaria", 
+          "desc": "Concepto de diseño para la landing page de una agencia inmobiliaria, centrado en una presentación moderna de las propiedades, una búsqueda cómoda de ofertas y la generación de confianza en la empresa.", 
+          "image": "/cases/horizon.avif", 
+          "url": "", 
+          "badge": "design" 
+        }
       ]
     },
     "process": {

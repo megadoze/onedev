@@ -214,10 +214,16 @@
           "result": "Landing page design for a luxury car rental service",
           "desc": "A landing page design concept for a luxury car rental service, focused on premium visuals, convenient vehicle selection, and an exclusive atmosphere.",
           "image": "/cases/daze.avif",
-          "url": "#",
+          "url": "",
           "badge": "design"
         },
-        { "title": "HORIZON", "result": "Landing page design for a real estate agency", "desc": "A landing page design concept for a real estate agency, focused on modern property presentation, convenient listing search, and building trust in the company.", "image": "/cases/horizon.avif", "url": "#", "badge": "design" }
+        { "title": "HORIZON", 
+          "result": "Landing page design for a real estate agency", 
+          "desc": "A landing page design concept for a real estate agency, focused on modern property presentation, convenient listing search, and building trust in the company.", 
+          "image": "/cases/horizon.avif", 
+          "url": "", 
+          "badge": "design" 
+        }
       ]
     },
     "process": {

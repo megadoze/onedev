@@ -26,10 +26,10 @@ type FaqItem = {
 };
 
 function withLocale(url: string, locale: string) {
-  if (!url) return url;
+  if (!url) return;
 
   const defaultLocale = "ru";
-
+2
   try {
     const parsed = new URL(url);
 
