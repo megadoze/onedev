@@ -213,7 +213,7 @@
           "title": "DAZE",
           "result": "Landing page design for a luxury car rental service",
           "desc": "A landing page design concept for a luxury car rental service, focused on premium visuals, convenient vehicle selection, and an exclusive atmosphere.",
-          "image": "/cases/daze.avif",
+          "image": "/cases/daze2.avif",
           "url": "",
           "badge": "design"
         },
@@ -223,6 +223,14 @@
           "image": "/cases/horizon.avif", 
           "url": "", 
           "badge": "design" 
+        },
+        {
+          "title": "WONDER",
+          "result": "Landing page for an interior design studio",
+          "desc": "Development of a landing page for WONDER featuring minimalist design, expressive typography, and a focus on brand aesthetics.",
+          "image": "/cases/wonder.avif",
+          "url": "https://wonderdesign.vercel.app/",
+          "badge": "design"
         }
       ]
     },

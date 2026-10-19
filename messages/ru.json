@@ -159,7 +159,7 @@
           "desc": "Сайт аренды авто с понятной структурой, быстрым выбором автомобилей и формой заявки под реальные сценарии пользователей.",
           "image": "/cases/c2d.avif",
           "url": "https://car2drive.ua",
-          "badge": "website"
+          "badge": "car rental"
         },
         {
           "title": "CAR2DRIVE CRM",
@@ -167,7 +167,7 @@
           "desc": "Внутренняя CRM для управления автопрокатом: заявки, статусы, клиенты, контроль процессов и работа команды в одном интерфейсе.",
           "image": "/cases/crm.avif",
           "url": "https://admin.car2drive.ua",
-          "badge": "CRM"
+          "badge": "car rental"
         },
         {
           "title": "Aera Capsule",
@@ -183,7 +183,7 @@
           "desc": "Платформа для rental-направления с digital-подачей, сервисной логикой и структурой под бизнес-зачи.",
           "image": "/cases/fleetwise.avif",
           "url": "https://fleetwise.rent",
-          "badge": "platform"
+          "badge": "car rental"
         },
         {
           "title": "MINI2GO",
@@ -191,7 +191,7 @@
           "desc": "Сервис аренды MINI с акцентом на яркую подачу, удобный путь к заявке и внутреннее управление клиентами и статусами.",
           "image": "/cases/mini2.avif",
           "url": "https://mini2go.rent",
-          "badge": "landing"
+          "badge": "car rental"
         },
         {
           "title": "Domus Studio",
@@ -207,15 +207,15 @@
           "desc": "Лендинг для компании, предоставляющей экзоскелеты в аренду, с акцентом на преимущества технологии, сценарии использования и простое оформление заявки.",
           "image": "/cases/humanplus.avif",
           "url": "https://humanplus.work",
-          "badge": "landing"
+          "badge": "services"
         },
         {
           "title": "DAZE",
           "result": "Дизайн лендинга для сервиса аренды люксовых авто",
           "desc": "Дизайн-концепция лендинга для сервиса аренды люксовых автомобилей с акцентом на премиальную визуальную подачу, удобный выбор авто и атмосферу эксклюзивности.",
-          "image": "/cases/daze.avif",
+          "image": "/cases/daze2.avif",
           "url": "",
-          "badge": "design"
+          "badge": "car rental"
         },
         {
           "title": "HORIZON",
@@ -223,6 +223,14 @@
           "desc": "Дизайн-концепция лендинга для агентства недвижимости с акцентом на современную презентацию объектов, удобный поиск предложений и формирование доверия к компании.",
           "image": "/cases/horizon.avif",
           "url": "",
+          "badge": "real estate"
+        },
+        {
+          "title": "WONDER",
+          "result": "Лендинг интерьерной дизайн-студии",
+          "desc": "Разработка лендинга для студии WONDER с минималистичным дизайном, выразительной типографикой и акцентом на эстетику бренда.",
+          "image": "/cases/wonder.avif",
+          "url": "https://wonderdesign.vercel.app/",
           "badge": "design"
         }
       ]
